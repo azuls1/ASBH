@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Mode Cheats</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-item active" onclick="showSection('home')">
+            <i class="bi bi-house-door-fill"></i> Home
+        </div>
+        <div class="menu-item" onclick="showSection('match')">
+            <i class="bi bi-bar-chart-fill"></i> Match
+        </div>
+        <div class="menu-item" onclick="showSection('player')">
+            <i class="bi bi-lightning-charge-fill"></i> Player (You)
+        </div>
+        <div class="menu-item" onclick="showSection('otherPlayers')">
+            <i class="bi bi-emoji-laughing-fill"></i> Other Players
+        </div>
+        <div class="menu-item leave-game">
+            <i class="bi bi-x"></i> Leave Game
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="home" class="home-content">
+            <div class="gamemode">Gamemode: Candy Quest</div>
+            <div class="status">Status: OK</div>
+            <div class="message">You are currently inside the game!</div>
+            <div class="footer">enjoy haxering</div>
+        </div>
+
+        <div id="match" class="cheat-container hidden">
+            <div class="cheat-action">
+                Crash Teacher's Screen
+                <i class="bi bi-hammer cheat-icon"></i>
+            </div>
+            <div class="cheat-action">
+                Freeze Scoreboard
+                <i class="bi bi-activity cheat-icon"></i>
+            </div>
+            <div class="cheat-action">
+                Freeze Teacher's Screen
+                <i class="bi bi-activity cheat-icon"></i>
+            </div>
+            <div class="cheat-action red-button">
+                Kill Game
+                <i class="bi bi-radioactive cheat-icon"></i>
+            </div>
+            <div class="input-container">
+                <span>Flood Alerts Box</span>
+                <input type="text" placeholder="Enter your message..">
+                <i class="bi bi-emoji-smile cheat-icon"></i>
+            </div>
+        </div>
+
+        <div id="player" class="cheat-container hidden">
+            <div class="input-container">
+                <span>Set Candy</span>
+                <input type="text" placeholder="Set candy..">
+                <i class="bi bi-emoji-smile-upside-down cheat-icon"></i>
+            </div>
+            <div class="dropdown-container">
+                <span>Set Custom Blook</span>
+                <select>
+                    <option>TEST</option>
+                </select>
+                <i class="bi bi-brush cheat-icon"></i>
+            </div>
+            <div class="dropdown-container">
+                <span>Set Custom Banner</span>
+                <select>
+                    <option>TEST</option>
+                </select>
+                <i class="bi bi-brush cheat-icon"></i>
+            </div>
+        </div>
+
+        <div id="otherPlayers" class="cheat-container hidden">
+            <div class="dropdown-container">
+                <span>Set Player Candy</span>
+                <select>
+                    <option>TEST</option>
+                </select>
+                <i class="bi bi-lightning-charge cheat-icon"></i>
+            </div>
+            <div class="dropdown-container">
+                <span>Steal Player Candy</span>
+                <select>
+                    <option>TEST</option>
+                </select>
+                <i class="bi bi-lightning-charge cheat-icon"></i>
+            </div>
+            <div class="dropdown-container">
+                <span>Flood Player Screen</span>
+                <select>
+                    <option>TEST</option>
+                </select>
+                <i class="bi bi-emoji-laughing cheat-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/sections.js"></script>
+</body>
+</html>
